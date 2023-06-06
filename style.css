@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --button: #FF0000;
+    --main-background:  #C4C4C4;
+    --background: #E5E5E5;
+    --text: #000;
+    --footer: #000;
+    --text-description: #9C9696;
+  }
+
+body {
+    background: var(--background);
+    width: 100vw;
+    height: 100vh;
+}
+
+header {
+    padding: 1.5rem;
+    position: absolute;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    flex-basis: 50rem;
+    justify-content: space-between;
+}
+
+nav ul li {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+}
+
+nav input {
+    padding: 0.8rem;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-flow: row;
+    /* padding-top: 5rem;
+    border: 2px solid; */
+}
+
+
+.text-item {
+    margin-top: 4rem;
+    overflow: hidden;
+    position: relative;
+    bottom: 4rem;
+    height: 100%;
+}
+
+.text-item .conteudo {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+    width: 30rem;
+    height: 50rem;
+    margin-left: 10rem;
+}
+
+.text-item .conteudo h1 {
+    margin-right: 7rem;
+    font-size: 4rem;
+}
+
+.text-item .conteudo p {
+    font-weight: 700;
+    color: var(--text-description);
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    margin-right: 5rem;
+}
+
+.text-item .conteudo h2 {
+    font-size: 3rem;
+    margin-top: 2rem;
+}
+
+.text-item .conteudo button {
+    background: var(--button);
+    margin-top: 1.5rem;
+    color: #FFF;
+    padding: 2rem 6rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+}
+
+.sapato {
+    background-color: var(--main-background);
+    overflow: hidden;
+    padding: 4rem;
+
+}
+
+.sapato .sapato-photos {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.sapato .sapato-photos .sapato-menor {
+    display: flex;
+    flex-flow: row wrap;
+    width: 55rem;
+    justify-content: space-around;
+    position: relative;
+    bottom: 4rem;
+}
+
+
+footer {
+    display: flex;
+    background: var(--background);
+}
+
+.foto-footer img {
+    width: 260px;
+}
+
+.menu-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+}
+
+.menu-footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    width: 50rem;
+}
+
+.menu-footer ul li {
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    flex-basis: 50rem;
+}
+
+.link-externo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--footer);
+    width: 25%;
+}
+
+.link-externo h2 {
+    color: #FFF;
+}
+
+.link-externo img {
+    margin-left: 1rem;
+}
+
+
+
